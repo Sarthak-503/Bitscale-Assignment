@@ -4,6 +4,11 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Navbar = () => {
   return (
+    <Box sx={{
+      borderBottom: "1px solid #E5E5E5",
+
+    }}>
+
     <Box
       sx={{
         width: "100%",
@@ -11,7 +16,6 @@ const Navbar = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        borderBottom: "1px solid #E5E5E5",
         mx: "1rem",
       }}
     >
@@ -92,6 +96,8 @@ const Navbar = () => {
         />
       </Box>
     </Box>
+    </Box>
+
   );
 };
 
