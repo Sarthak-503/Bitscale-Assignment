@@ -1,6 +1,7 @@
 import { Box } from "@mui/material"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
+import Toolbar from "./components/Common/Toolbar"
 
 const App = () => {
   return (
@@ -15,7 +16,14 @@ const App = () => {
     }}>
     
     <Navbar/>
+    <Box sx={{
+      display:'flex',
+      flexDirection:'row',
+      height:'94%'
+    }}>
     <Sidebar/>
+    <Toolbar/>
+    </Box>
     </Box>
     </>
   )

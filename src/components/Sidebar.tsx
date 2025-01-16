@@ -7,7 +7,6 @@ import Database from "../../src/assets/Icons/Database.png";
 import CreditCard from "../../src/assets/Icons/CreditCard.png";
 
 export default function Sidebar() {
-  // TODO-HG LINKS WILL BE DYNAMIC
   return (
     <>
       <Box
@@ -15,7 +14,7 @@ export default function Sidebar() {
         borderColor="#E5E5E5"
         sx={{
           height: "100%",
-          width: "62px",
+          width: "4.3%",
           display: "flex",
           justifyContent: "center",
         }}
@@ -26,7 +25,7 @@ export default function Sidebar() {
             flexDirection: "column",
             alignItems: "center", 
             justifyContent: "space-between",
-            marginTop: "26px",
+            marginTop: "2rem",
             width: "36px",
           }}
         >
