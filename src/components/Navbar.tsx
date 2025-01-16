@@ -11,7 +11,7 @@ const Navbar = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        border: "1px solid red",
+        borderBottom: "1px solid #E5E5E5",
         mx: "1rem",
       }}
     >
@@ -28,19 +28,18 @@ const Navbar = () => {
       >
         <ArrowBackIcon
           sx={{
-            width:'18px',
-            height:'18px',
+            width: "18px",
+            height: "18px",
             color: "#1F2A37",
-            
           }}
         />
         <Typography
           variant="body2"
           sx={{
             color: "#6B7280",
-            width:'106px',
-            height:'21px',
-            ml:'1rem'
+            width: "106px",
+            height: "21px",
+            ml: "1rem",
           }}
         >
           Name of file
@@ -48,28 +47,47 @@ const Navbar = () => {
       </Box>
 
       {/* AutoSave And Profile Icon  */}
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          padding: "0.5rem",
+          alignItems: "center",
+          mr: "",
+        }}
+      >
         {/* AutoSave and title  */}
-        <Box>
-        <ArrowBackIcon
+        <Box
           sx={{
-            width:'18px',
-            height:'18px',
-            color: "#1F2A37",
-            
+            display: "flex",
           }}
-        />
-        <Typography>
-          Auto Save
-        </Typography>
+        >
+          <ArrowBackIcon
+            sx={{
+              width: "18px",
+              height: "18px",
+              color: "#1F2A37",
+            }}
+          />
+          <Typography
+            typography="body2"
+            sx={{
+              color: "#0E9F6E",
+              width: "106px",
+              height: "21px",
+              ml: "1rem",
+            }}
+          >
+            Auto Save
+          </Typography>
         </Box>
         {/* Profile Icon  */}
         <ArrowBackIcon
           sx={{
-            width:'18px',
-            height:'18px',
+            width: "18px",
+            height: "18px",
             color: "#1F2A37",
-            
           }}
         />
       </Box>

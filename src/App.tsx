@@ -9,7 +9,8 @@ const App = () => {
       flexDirection:'column',
       borderBottom:'1px solid rgba(218, 218, 218, 0.6)',
       borderRadius:'1rem',
-      height:'100vh'
+      height:'100vh',
+      // overflow:'hidden'
     }}>
 
     <Navbar/>
