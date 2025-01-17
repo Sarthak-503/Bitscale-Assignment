@@ -1,10 +1,14 @@
 import Box from "@mui/material/Box";
 import CustomImage from "./Common/CustomImage";
-import CircleImage from "../../src/assets/Icons/circle.png";
-import PuzzleImage from "../../src/assets/Icons/puzzle.png";
-import TableImage from "../../src/assets/Icons/table.png";
-import Database from "../../src/assets/Icons/Database.png";
-import CreditCard from "../../src/assets/Icons/CreditCard.png";
+import  Puzzle from "../assets/Icons/Sidebar/puzzle.png";
+import Circle from "../assets/Icons/Sidebar/circle.png";
+import Table from "../assets/Icons/Sidebar/table.png";
+import Database from "../assets/Icons/Sidebar/Database.png";
+import CreditCard from "../assets/Icons/Sidebar/circle.png";
+// import PuzzleImage from "../../src/assets/Icons/puzzle.png";
+// import TableImage from "../../src/assets/Icons/table.png";
+// import Database from "../../src/assets/Icons/Database.png";
+// import CreditCard from "../../src/assets/Icons/CreditCard.png";
 
 export default function Sidebar() {
   return (
@@ -39,9 +43,9 @@ export default function Sidebar() {
               alignItems: "center", 
             }}
           >
-            <CustomImage src={TableImage} alt="Table Image" />
-            <CustomImage src={CircleImage} alt="Circle Image" />
-            <CustomImage src={PuzzleImage} alt="Puzzle Image" />
+            <CustomImage src={Table} alt="Table Image" />
+            <CustomImage src={Circle} alt="Circle Image" />
+            <CustomImage src={Puzzle} alt="Puzzle Image" />
           </Box>
 
           {/* Box2 */}
