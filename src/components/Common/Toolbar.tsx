@@ -11,6 +11,8 @@ const Toolbar = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          paddingX: 2.5,
+          mb:'2.4%'
         }}
       >
         <ActionBar />

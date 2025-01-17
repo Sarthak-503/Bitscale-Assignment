@@ -34,12 +34,12 @@ const OperationPanel = () => {
           alignItems:'center',
           ml:2, // 15.168px
         }}>
-          <ShareOutlinedIcon fontSize="small" sx={{
+          <ShareOutlinedIcon fontSize="medium" sx={{
             mx:'0.2rem',
             p:'0.1rem',
 
           }}/>
-          <SaveAltIcon fontSize="small" sx={{
+          <SaveAltIcon fontSize="medium" sx={{
             mx:'0.2rem',
             p:'0.1rem',
           }}/>

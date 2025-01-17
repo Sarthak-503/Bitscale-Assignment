@@ -1,7 +1,7 @@
 import { Box } from "@mui/material"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
-import DataToolsPanel from "./components/Common/DataToolsPanel"
+import DataToolsPanel from "./components/DataToolsPanel"
 
 const App = () => {
   return (
