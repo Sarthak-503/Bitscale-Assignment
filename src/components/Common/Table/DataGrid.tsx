@@ -5,19 +5,19 @@ import CustomImage from "../CustomImage";
 import Chatgpt from "../../../assets/Icons/DataGrid/Chatgpt.png";
 import EnrichCompany from "../../../assets/Icons/DataGrid/EnrichCompany.png";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
-import AddIcon from '@mui/icons-material/Add';
+import AddIcon from "@mui/icons-material/Add";
 import PlayCircleFilledWhiteOutlinedIcon from "@mui/icons-material/PlayCircleFilledWhiteOutlined";
 const columns: GridColDef[] = [
-  { field: "id", headerName: "", width: 20, sortable: false, },
+  { field: "id", headerName: "", width: 20, sortable: false },
   {
     field: "play",
     headerName: "",
     width: 70,
     sortable: false,
     renderCell: () => (
-      <PlayCircleFilledWhiteOutlinedIcon 
-        fontSize="medium" 
-        sx={{ color: "#1976d2", cursor: "pointer" }} 
+      <PlayCircleFilledWhiteOutlinedIcon
+        fontSize="medium"
+        sx={{ color: "#1976d2", cursor: "pointer" }}
       />
     ),
   },
@@ -76,7 +76,12 @@ const columns: GridColDef[] = [
           py: "0.1rem",
         }}
       >
-        <CustomImage width='15rem' height='15rem' src={Chatgpt} alt="Chatgpt Image" />
+        <CustomImage
+          width="15rem"
+          height="15rem"
+          src={Chatgpt}
+          alt="Chatgpt Image"
+        />
         <Typography
           variant="body2"
           sx={{
@@ -116,7 +121,12 @@ const columns: GridColDef[] = [
             mr: "4.5rem",
           }}
         >
-          <CustomImage width='15rem' height='15rem' src={EnrichCompany} alt="Enrich Company" />
+          <CustomImage
+            width="15rem"
+            height="15rem"
+            src={EnrichCompany}
+            alt="Enrich Company"
+          />
           <Typography
             variant="body2"
             sx={{
@@ -178,63 +188,45 @@ const columns: GridColDef[] = [
 ];
 
 const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35, fullname: "Jon Snow" },
+  {
+    id: 1,
+    lastName: "Bitscale Evaluation - Account relevancy check.csv",
+    firstName: "Oct 12, 2024 at 14:08 PM",
+    age: "Bitscale Evaluation - Account relevancy check.csv",
+    fullname: "Jon Snow",
+  },
   {
     id: 2,
-    lastName: "Lannister",
-    firstName: "Cersei",
-    age: 42,
+    lastName: "cell data size exceeds limit",
+    firstName: "Oct 12, 2024 at 14:08 PM",
+    age: "BMW Evaluation - Relevancy check.csv",
     fullname: "Cersei Lannister",
   },
   {
     id: 3,
-    lastName: "Lannister",
-    firstName: "Jaime",
-    age: 45,
+    lastName: "Loading data, Please wait",
+    firstName: "Oct 12, 2024 at 14:08 PM",
+    age: "Google Evaluation - Lilevancy check.csv",
     fullname: "Jaime Lannister",
   },
   {
     id: 4,
-    lastName: "Stark",
-    firstName: "Arya",
-    age: 16,
+    lastName: "Loading data, Please wait",
+    firstName: "Oct 12, 2024 at 14:08 PM",
+    age: "Apple Evaluation - Olvancy check.csv",
     fullname: "Arya Stark",
   },
   {
     id: 5,
-    lastName: "Targaryen",
-    firstName: "Daenerys",
-    age: null,
+    lastName: "Loading data, Please wait",
+    firstName: "Oct 12, 2024 at 14:08 PM",
+    age: "Figma Evaluation - Evancy check.csv",
     fullname: "Daenerys Targaryen",
   },
-  {
-    id: 6,
-    lastName: "Melisandre",
-    firstName: null,
-    age: 150,
-    fullname: "Melisandre",
-  },
-  {
-    id: 7,
-    lastName: "Clifford",
-    firstName: "Ferrara",
-    age: 44,
-    fullname: "Ferrara Clifford",
-  },
-  {
-    id: 8,
-    lastName: "Frances",
-    firstName: "Rossini",
-    age: 36,
-    fullname: "Rossini Frances",
-  },
-  {
-    id: 9,
-    lastName: "Roxie",
-    firstName: "Harvey",
-    age: 65,
-    fullname: "Harvey Roxie",
-  },
+  { id: 6, lastName: "", firstName: "", age: "", fullname: "" },
+  { id: 7, lastName: "", firstName: "", age: "", fullname: "" },
+  { id: 8, lastName: "", firstName: "", age: "", fullname: "" },
+  { id: 9, lastName: "", firstName: "", age: "", fullname: "" },
 ];
 
 export default function Datagrid() {
@@ -252,13 +244,13 @@ export default function Datagrid() {
           border: "1px solid red", // Outer Table border
           "& .MuiDataGrid-columnHeaders": {
             borderBottom: "1px solid #E2E2E3",
-            
+
             "& .MuiDataGrid-columnHeader": {
               backgroundColor: "#F6F6F6",
               borderRight: "1px solid #E2E2E3",
             },
             "& .MuiDataGrid-columnHeader[data-field='firstName']": {
-              backgroundColor: "#FEF2C7 !important",
+              backgroundColor: "#FEF2C7",
             },
           },
           "& .MuiDataGrid-columnHeaderTitle": {
@@ -267,21 +259,8 @@ export default function Datagrid() {
             color: "#1C1B1F",
             lineHeight: "16.94px",
           },
-          "& .MuiDataGrid-row": {
-            borderBottom: "1px solid #e0e0e0",
-            "&:hover": {
-              cursor: "pointer",
-            },
-          },
           "& .MuiDataGrid-columnSeparator": {
-            display: "none", // Remove column separators
-          },
-
-          "& .MuiDataGrid-footerContainer": {
-            display: "flex",
-            minHeight: "40px",
-            height: "40px",
-            marginBottom: "4px",
+            display: "none",
           },
           "& .MuiTablePagination-root": {
             overflow: "hidden",
@@ -289,6 +268,7 @@ export default function Datagrid() {
           "& .MuiDataGrid-cell": {
             borderBottom: "1px solid #e0e0e0",
             borderRight: "1px solid #e0e0e0",
+            textAlign: "left", // Align text to the left
           },
         }}
       />
