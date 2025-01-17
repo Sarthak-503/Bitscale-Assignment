@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <Box sx={{
       borderBottom: "1px solid #E5E5E5",
-
     }}>
 
     <Box

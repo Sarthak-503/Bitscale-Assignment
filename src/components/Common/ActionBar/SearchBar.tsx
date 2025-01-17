@@ -3,31 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 const SearchBar = () => {
   return (
     <>
-      <Box>
-        {/* <TextField
-          label="Search Leads"
-          variant="outlined"
-          fullWidth
-          size="small"
-          sx={{
-            width: "100%",
-            "& ..MuiTextField-root":{
-              height:'2rem'
-            },
-            "& .MuiInputBase-root": {
-              height: "2rem", 
-              display: "flex",
-              alignItems: "center"
-            },
-            "& .MuiInputBase-input": {
-              paddingBottom: '1px',
-              marginBottom:'1px',
-              textAlign: "initial", 
-              fontSize:'16px'
-            },
-
-          }}
-        /> */}
+      <Box >
         <TextField
           placeholder="Search"
           variant="outlined"

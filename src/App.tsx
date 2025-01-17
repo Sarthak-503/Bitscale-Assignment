@@ -1,7 +1,7 @@
 import { Box } from "@mui/material"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
-import Toolbar from "./components/Common/Toolbar"
+import DataToolsPanel from "./components/Common/DataToolsPanel"
 
 const App = () => {
   return (
@@ -22,11 +22,11 @@ const App = () => {
       height:'94%'
     }}>
     <Sidebar/>
-    <Toolbar/>
+    <DataToolsPanel/>
     </Box>
     </Box>
     </>
   )
 }
 
-export default App
+export default App;
