@@ -7,12 +7,12 @@ const Toolbar = () => {
    
       <Box
         sx={{
-          mt:"2.9%",
+          mt:"1.8%",
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
           paddingX: 2.5,
-          mb:'2.4%'
+          mb:'1.8%'
         }}
       >
         <ActionBar />

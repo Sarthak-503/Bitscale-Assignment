@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import TitleAndIcon from "./TitleAndIcon";
-import Column from "../../../assets/Icons/ActionBar/Column.png";
-import Filter from "../../../assets/Icons/ActionBar/Filter.png";
-import Row from "../../../assets/Icons/ActionBar/Row.png";
-import Sort from "../../../assets/Icons/ActionBar/Sort.png";
+import ViewWeekOutlinedIcon from '@mui/icons-material/ViewWeekOutlined';
+import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
+import TableRowsOutlinedIcon from '@mui/icons-material/TableRowsOutlined';
+import SwapVertOutlinedIcon from '@mui/icons-material/SwapVertOutlined'; // TODO Correct Sort
 import SearchBar from "./SearchBar";
 const ActionBar = () => (
   <>
@@ -13,7 +13,7 @@ const ActionBar = () => (
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        width:'62%'// TODO 58%
+        width:'65%'// TODO 58%
       }}
     >
       <Box>
@@ -27,10 +27,10 @@ const ActionBar = () => (
           alignItems: "center",
         }}
       >
-        <TitleAndIcon icon={Row} title="1/1 Row" />
-        <TitleAndIcon icon={Column} title="3/3 Column" />
-        <TitleAndIcon icon={Filter} title="0 Filter" />
-        <TitleAndIcon icon={Sort} title="Sort" />
+        <TitleAndIcon Icon={TableRowsOutlinedIcon} title="1/1 Row" />
+        <TitleAndIcon Icon={ViewWeekOutlinedIcon} title="3/3 Column" />
+        <TitleAndIcon Icon={FilterAltOutlinedIcon} title="0 Filter" />
+        <TitleAndIcon Icon={SwapVertOutlinedIcon} title="Sort" />
       </Box>
     </Box>
   </>

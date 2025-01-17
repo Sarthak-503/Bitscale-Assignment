@@ -1,11 +1,11 @@
 import { Box, Typography } from "@mui/material";
-import CustomImage from "../CustomImage";
 
 interface TitleAndIconProps {
   title: string;
-  icon: string;
+  Icon: React.ElementType;
 }
-const TitleAndIcon: React.FC<TitleAndIconProps> = ({ title, icon }) => {
+const TitleAndIcon: React.FC<TitleAndIconProps> = ({ title, Icon }) => {
+  // const CustomICon = Icon
   return (
     <>
       <Box
@@ -25,7 +25,7 @@ const TitleAndIcon: React.FC<TitleAndIconProps> = ({ title, icon }) => {
             justifyContent: "center",
           }}
         >
-          <CustomImage src={icon} alt={title} />
+          <Icon />
         </Box>
         <Typography
           variant="subtitle2"

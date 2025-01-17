@@ -5,10 +5,6 @@ import Circle from "../assets/Icons/Sidebar/circle.png";
 import Table from "../assets/Icons/Sidebar/table.png";
 import Database from "../assets/Icons/Sidebar/Database.png";
 import CreditCard from "../assets/Icons/Sidebar/circle.png";
-// import PuzzleImage from "../../src/assets/Icons/puzzle.png";
-// import TableImage from "../../src/assets/Icons/table.png";
-// import Database from "../../src/assets/Icons/Database.png";
-// import CreditCard from "../../src/assets/Icons/CreditCard.png";
 
 export default function Sidebar() {
   return (
@@ -43,7 +39,7 @@ export default function Sidebar() {
               alignItems: "center", 
             }}
           >
-            <CustomImage src={Table} alt="Table Image" />
+            <CustomImage  src={Table} alt="Table Image" />
             <CustomImage src={Circle} alt="Circle Image" />
             <CustomImage src={Puzzle} alt="Puzzle Image" />
           </Box>

@@ -8,7 +8,6 @@ const DataToolsPanel = () => {
       <Box
         sx={{
           width: "95.6%",
-          border: "1px solid red",
           height: "100%",
         }}
       >

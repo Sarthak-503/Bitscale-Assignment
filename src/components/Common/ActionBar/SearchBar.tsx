@@ -3,7 +3,10 @@ import SearchIcon from "@mui/icons-material/Search";
 const SearchBar = () => {
   return (
     <>
-      <Box >
+      <Box sx={{
+        my:'0.1px',
+        mr:'1.5rem'
+      }}>
         <TextField
           placeholder="Search"
           variant="outlined"
@@ -11,7 +14,9 @@ const SearchBar = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <SearchIcon />
+                <SearchIcon sx={{
+                  color:'#1F2A37'
+                }}/>
               </InputAdornment>
             ),
             style: {
@@ -21,7 +26,10 @@ const SearchBar = () => {
           }}
           sx={{
             "& .MuiOutlinedInput-root": {
-              height: "32px", // Ensures consistent height for the entire component
+              height: "32px", 
+              borderColor: "#D1D5DB", 
+              backgroundColor: "#F9FAFB", 
+              borderRadius: "8px",
             },
             width: 300,
           }}
