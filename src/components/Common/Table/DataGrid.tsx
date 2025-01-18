@@ -241,7 +241,7 @@ export default function Datagrid() {
         disableColumnMenu
         disableColumnResize
         sx={{
-          border: "1px solid red", // Outer Table border
+          // border: "1px solid red", // Outer Table border
           "& .MuiDataGrid-columnHeaders": {
             borderBottom: "1px solid #E2E2E3",
 

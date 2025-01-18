@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import CustomImage from "./Common/CustomImage";
-import  Puzzle from "../assets/Icons/Sidebar/puzzle.png";
+import Puzzle from "../assets/Icons/Sidebar/puzzle.png";
 import Circle from "../assets/Icons/Sidebar/circle.png";
 import Table from "../assets/Icons/Sidebar/table.png";
 import Database from "../assets/Icons/Sidebar/Database.png";
@@ -23,7 +23,7 @@ export default function Sidebar() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center", 
+            alignItems: "center",
             justifyContent: "space-between",
             marginTop: "2rem",
             width: "36px",
@@ -36,12 +36,27 @@ export default function Sidebar() {
               flexDirection: "column",
               justifyContent: "space-between",
               height: "20%",
-              alignItems: "center", 
+              alignItems: "center",
             }}
           >
-            <CustomImage  src={Table} alt="Table Image" />
-            <CustomImage src={Circle} alt="Circle Image" />
-            <CustomImage src={Puzzle} alt="Puzzle Image" />
+            <CustomImage
+              width="15rem"
+              height="15rem"
+              src={Table}
+              alt="Table Image"
+            />
+            <CustomImage
+              width="15rem"
+              height="15rem"
+              src={Circle}
+              alt="Circle Image"
+            />
+            <CustomImage
+              width="15rem"
+              height="15rem"
+              src={Puzzle}
+              alt="Puzzle Image"
+            />
           </Box>
 
           {/* Box2 */}
@@ -49,13 +64,23 @@ export default function Sidebar() {
             sx={{
               height: "20%",
               display: "flex",
-              flexDirection:'column',
+              flexDirection: "column",
               justifyContent: "space-around",
               alignItems: "center",
             }}
           >
-            <CustomImage src={CreditCard} alt="CreditCard Image" />
-            <CustomImage src={Database} alt="Database Image" />
+            <CustomImage
+              width="15rem"
+              height="15rem"
+              src={CreditCard}
+              alt="CreditCard Image"
+            />
+            <CustomImage
+              width="15rem"
+              height="15rem"
+              src={Database}
+              alt="Database Image"
+            />
           </Box>
         </Box>
       </Box>

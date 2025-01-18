@@ -24,9 +24,9 @@ const OperationPanel = () => {
             background: "#1F2A37",
             color: "white",
             borderRadius: 1,
-            fontSize: "0.7rem",
+            fontSize: "0.6rem",
             width: "5rem",
-            p: "1rem",
+            p: "1.2rem",
             height: "1vh",
           }}
         >
